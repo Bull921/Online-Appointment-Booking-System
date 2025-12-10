@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "Doctor";
+
+service DoctorService{
+  rpc getDoctorDetails(DoctorRequest) returns (DoctorResponse);
+}
+
+message DoctorRequest{
+  string doctorId=1;
+}
+
+message DoctorResponse{
+  string name=1;
+}

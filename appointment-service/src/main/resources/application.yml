@@ -1,0 +1,8 @@
+grpc:
+  client:
+    DoctorService:
+      address: "static://localhost:9991"
+      negotiation-type: PLAINTEXT
+    patientService:
+      address: "static://localhost:9992"
+      negotiation-type: PLAINTEXT
